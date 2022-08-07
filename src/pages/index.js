@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Hero, Intro, Projects } from "@components";
+import { Hero, Intro, Projects } from "@components/routes";
 
 const IndexPage = () => {
   return (
