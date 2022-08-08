@@ -1,13 +1,15 @@
 import * as React from "react";
-import { Hero, Intro, Projects } from "@components/routes";
+import { Hero, Intro, Projects, Contact } from "components/routes";
+import { Layout } from "components/shared";
 
 const IndexPage = () => {
   return (
-    <main>
+    <Layout>
       <Hero />
       <Intro />
       <Projects />
-    </main>
+      <Contact />
+    </Layout>
   );
 };
 

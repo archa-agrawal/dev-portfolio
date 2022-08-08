@@ -1,8 +1,8 @@
 import React from "react";
-import { Project } from "@components/functional";
+import { Project } from "components/functional";
 
 const Projects = () => (
-  <div>
+  <div style={{ backgroundColor: "lightgrey" }}>
     <h3>Projects</h3>
     <ul>
       <li>
