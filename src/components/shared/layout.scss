@@ -1,17 +1,23 @@
 @import "utilities/variables";
 .app{
   height: 100vh;
+  overflow: hidden;
   .main{
     width: 100%;
     height: calc(100vh - $nav-height);
     position: relative;
     top: $nav-height;
+    -ms-scroll-snap-points-y: repeat(calc(100vh - $nav-height));
+    scroll-snap-type: y mandatory;
+    overflow: auto;
     > div{
-      width: 80%;
+      width: 100%;
       min-height: calc(100vh - $nav-height);
       height: auto;
       margin: 0 auto;
       padding: 20px;
+      scroll-snap-align: start;
+      overflow-x: hidden;
     }
   }
 }
