@@ -1,7 +1,7 @@
 import React from "react";
 
 const Hero = () => (
-  <div style={{ backgroundColor: "yellow" }}>
+  <div style={{ backgroundColor: "yellow" }} id={"home"}>
     <p>Hi, my name is</p>
     <h2>Archana Agrawal,</h2>
     <h3>I am a web developer</h3>

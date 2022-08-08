@@ -7,9 +7,13 @@
     height: calc(100vh - $nav-height);
     position: relative;
     top: $nav-height;
-    -ms-scroll-snap-points-y: repeat(calc(100vh - $nav-height));
+    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     overflow: auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+      display: none;
+    }
     > div{
       width: 80%;
       min-height: calc(100vh - $nav-height);

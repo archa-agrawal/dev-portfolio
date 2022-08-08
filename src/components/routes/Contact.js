@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div style={{ backgroundColor: "green" }}>
+    <div style={{ backgroundColor: "green" }} id={"contact"}>
       <h3>Contact me</h3>
       <form>
         <label htmlFor={"name"}>Name</label>

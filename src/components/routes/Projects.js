@@ -2,7 +2,7 @@ import React from "react";
 import { Project } from "components/functional";
 
 const Projects = () => (
-  <div style={{ backgroundColor: "lightgrey" }}>
+  <div style={{ backgroundColor: "lightgrey" }} id={"projects"}>
     <h3>Projects</h3>
     <ul>
       <li>

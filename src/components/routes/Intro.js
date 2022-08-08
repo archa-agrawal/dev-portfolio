@@ -1,7 +1,7 @@
 import React from "react";
 
 const Intro = () => (
-  <div style={{ backgroundColor: "lightblue" }}>
+  <div style={{ backgroundColor: "lightblue" }} id={"intro"}>
     <h3>Intro</h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
