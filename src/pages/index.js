@@ -2,6 +2,8 @@ import * as React from "react";
 import { Hero, Intro, Projects, Contact } from "components/routes";
 import { Layout } from "components/shared";
 
+import "./index.scss";
+
 const IndexPage = () => {
   return (
     <Layout>
