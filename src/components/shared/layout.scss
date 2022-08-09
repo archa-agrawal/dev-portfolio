@@ -1,8 +1,8 @@
 @import "utilities/variables";
-.app{
+.app {
   height: 100vh;
   overflow: hidden;
-  .main{
+  .main {
     width: 100%;
     height: calc(100vh - $nav-height);
     position: relative;
@@ -11,16 +11,17 @@
     scroll-snap-type: y mandatory;
     overflow: auto;
     scrollbar-width: none;
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
       display: none;
     }
-    > div{
-      width: 80%;
+    > div {
+      display: flex;
+      width: 1080px;
       min-height: calc(100vh - $nav-height);
       height: auto;
       margin: 0 auto;
-      padding: 20px;
       scroll-snap-align: start;
+      overflow-x: hidden;
     }
   }
 }

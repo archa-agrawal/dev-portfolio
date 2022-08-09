@@ -1,0 +1,29 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.project-meta {
+  display: flex;
+  border: solid black 1px;
+}
+
+.project-image {
+  height: 230px;
+}
+
+.project-details {
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.project-desc {
+  line-height: 20px;
+}
+
+.project-button {
+  padding-right: 5px;
+}
