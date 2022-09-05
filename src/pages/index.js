@@ -1,6 +1,11 @@
 import * as React from "react";
-import { Hero, Intro, Projects, Contact } from "components/routes";
-import { Layout } from "components/shared";
+
+import Hero from "components/routes/Hero";
+import Intro from "components/routes/Intro";
+import Projects from "components/routes/Projects";
+import Contact from "components/routes/Contact";
+
+import Layout from "components/shared/Layout";
 
 import "./index.scss";
 

@@ -1,4 +1,36 @@
+@import "utilities/variables.scss";
+
 .hero-container {
-  width: 50%;
-  margin: auto;
+  width: 90%;
+  margin: 10% auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  @include breakpoint(md) {
+    width: 70%;
+  }
+  @include breakpoint(sm) {
+    flex-direction: column;
+    margin-top: 20%;
+  }
+  transition: 0.3s ease all;
+  .avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    @include breakpoint(md) {
+      height: 200px;
+      width: 200px;
+    }
+    @include breakpoint(sm) {
+      margin-bottom: 40px;
+    }
+  }
+  .details {
+    padding-left: 40px;
+    @include breakpoint(sm) {
+      padding-left: 0;
+    }
+  }
 }

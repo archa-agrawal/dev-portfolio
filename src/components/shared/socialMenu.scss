@@ -1,0 +1,44 @@
+@import "utilities/variables";
+
+.social-menu {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  z-index: 10000;
+  @include breakpoint(md) {
+    left: 40px;
+  }
+  @include breakpoint(sm) {
+    display: none;
+  }
+  .social-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    > li {
+      padding-bottom: 10px;
+      &:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+        > svg {
+          color: tomato;
+        }
+      }
+      transition: 0.3s ease all;
+    }
+    > li:last-of-type {
+      padding-bottom: 20px;
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: black;
+  }
+}

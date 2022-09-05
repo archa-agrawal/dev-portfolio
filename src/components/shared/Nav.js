@@ -24,7 +24,7 @@ const nav = () => {
   }, []);
 
   useEffect(() => {
-    if (size.width > 768 && menuOpen) {
+    if (size.width > 1000 && menuOpen) {
       setMenuOpen(false);
     }
   }, [size.width, menuOpen]);
@@ -41,7 +41,7 @@ const nav = () => {
         </a>
         <nav
           className={`${"navheader__content__nav"} ${
-            menuOpen && size.width < 768 ? "isMenu" : ""
+            menuOpen && size.width < 1000 ? "isMenu" : ""
           }`}
         >
           <ul>
