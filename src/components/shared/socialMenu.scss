@@ -3,10 +3,10 @@
 .social-menu {
   position: fixed;
   bottom: 0;
-  left: 10px;
+  left: 40px;
   z-index: 10000;
   @include breakpoint(md) {
-    left: 40px;
+    left: 10px;
   }
   @include breakpoint(sm) {
     display: none;
@@ -20,11 +20,14 @@
     padding: 0;
     > li {
       padding-bottom: 10px;
+      > a {
+        color: inherit;
+      }
       &:hover {
         transform: translateY(-3px);
         cursor: pointer;
-        > svg {
-          color: tomato;
+        > a {
+          color: $dark;
         }
       }
       transition: 0.3s ease all;
@@ -39,6 +42,7 @@
     width: 1px;
     height: 90px;
     margin: 0 auto;
-    background-color: black;
+    background-color: $text-color;
   }
+  transition: 0.3s ease all;
 }

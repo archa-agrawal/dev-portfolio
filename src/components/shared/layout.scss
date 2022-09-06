@@ -6,13 +6,15 @@ body {
 .app {
   height: 100vh;
   overflow: hidden;
+  background-color: $light;
+  color: $text-color;
+  z-index: 2;
   .main {
     width: 100%;
     height: calc(100vh - $nav-height);
     position: relative;
     top: $nav-height;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
     overflow: auto;
     &::-webkit-scrollbar {
       display: none;
@@ -22,7 +24,7 @@ body {
       width: 100%;
       min-height: calc(100vh - $nav-height);
       height: auto;
-      margin: 0 auto;
+      margin: 0 auto 200px;
       scroll-snap-align: start;
       overflow-x: hidden;
     }

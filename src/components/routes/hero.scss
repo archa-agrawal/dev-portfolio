@@ -1,14 +1,14 @@
 @import "utilities/variables.scss";
 
 .hero-container {
-  width: 90%;
+  width: 70%;
   margin: 10% auto auto;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   @include breakpoint(md) {
-    width: 70%;
+    width: 90%;
   }
   @include breakpoint(sm) {
     flex-direction: column;
@@ -16,12 +16,12 @@
   }
   transition: 0.3s ease all;
   .avatar {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     @include breakpoint(md) {
-      height: 200px;
-      width: 200px;
+      height: 150px;
+      width: 150px;
     }
     @include breakpoint(sm) {
       margin-bottom: 40px;
@@ -30,7 +30,25 @@
   .details {
     padding-left: 40px;
     @include breakpoint(sm) {
-      padding-left: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      > p {
+        margin: 0;
+      }
     }
+  }
+}
+.dynamic-background-side {
+  display: flex;
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+
+.dynamic-background-bottom {
+  display: flex;
+  @include breakpoint(sm) {
+    display: none;
   }
 }

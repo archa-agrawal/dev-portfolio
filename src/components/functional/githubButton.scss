@@ -1,0 +1,20 @@
+@import "utilities/variables";
+.github-button-container {
+  display: inline-flex;
+  background-color: $dark;
+  color: $light;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  .github-button-title {
+    margin-left: 5px;
+    top: 2px;
+    position: relative;
+  }
+  &:hover {
+    border: solid 1px $dark;
+    padding: 9px;
+    background-color: $light;
+    color: $dark;
+  }
+}

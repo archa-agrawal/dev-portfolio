@@ -2,15 +2,15 @@
 
 .navheader {
   background: $dark;
-  width: calc(100% - 3rem);
+  width: 100%;
   height: $headerHeight;
-  padding: 0 1.5rem;
+  padding: 0;
   position: fixed;
   top: 0;
-  z-index: 10000;
+  z-index: 10001;
   @include breakpoint(md) {
-    width: 100%;
-    padding: 0;
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
   }
   transition: 0.3s ease all;
 
@@ -38,46 +38,46 @@
       top: 0;
       right: 100%;
       bottom: 0;
-      width: 100%;
-      height: 100vh;
-      position: fixed;
+      transform: none;
+      flex-direction: row;
+      background: transparent;
+      width: auto;
+      height: 100%;
+      position: static;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: rgba($dark, 0.9);
       backdrop-filter: blur(2px);
-      transform: translate(0);
       transition: 0.3s ease transform;
-
       @include breakpoint(md) {
-        transform: none;
-        flex-direction: row;
-        background: transparent;
-        width: auto;
-        height: 100%;
-        position: static;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        flex-direction: column;
+        background: rgba($dark, 0.9);
+        transform: translate(0);
       }
       ul {
         list-style: none;
         padding: 0;
         display: flex;
-        flex-direction: column;
-        margin-bottom: $spacing-lg;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0;
+        margin-right: calc(0.5rem + #{$spacing-md});
+        margin-top: 0;
         @include breakpoint(md) {
-          flex-direction: row;
-          align-items: center;
-          margin-bottom: 0;
-          margin-right: calc(0.5rem + #{$spacing-md});
-          margin-top: 0;
+          flex-direction: column;
+          margin-bottom: $spacing-lg;
+          margin-right: 0;
         }
         li {
           &:not(:last-child) {
-            margin-bottom: $spacing-lg;
+            margin-bottom: 0;
+            margin-right: $spacing-md;
             @include breakpoint(md) {
-              margin-bottom: 0;
-              margin-right: $spacing-md;
+              margin-bottom: $spacing-lg;
             }
           }
           a {
@@ -104,20 +104,20 @@
         border-radius: $borderRadius;
         font-size: 1rem;
         font-family: inherit;
-        background: $primary;
+        background: $light;
         color: $dark;
         border: 1px solid transparent;
         transition: 0.3s ease all;
 
         &:hover {
-          border-color: $primary;
-          background: rgba($primary, 0.1);
-          color: $primary;
+          border-color: $light;
+          background: rgba($light, 0.1);
+          color: $light;
         }
         &:active {
-          border-color: $primary;
-          background: linear-gradient(rgba($primary, 0.2), rgba($primary, 0.3));
-          color: $primary;
+          border-color: $light;
+          background: linear-gradient(rgba($light, 0.2), rgba($light, 0.3));
+          color: $light;
         }
       }
 
@@ -128,18 +128,18 @@
 
     &__toggle {
       cursor: pointer;
-      display: flex;
+      display: none;
       align-items: center;
       font-size: 2rem;
       transition: 0.3s ease all;
       position: relative;
 
       &:hover {
-        color: $primary;
+        color: $light;
       }
 
       @include breakpoint(md) {
-        display: none;
+        display: flex;
       }
     }
   }

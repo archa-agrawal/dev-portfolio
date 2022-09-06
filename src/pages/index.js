@@ -8,6 +8,7 @@ import Contact from "components/routes/Contact";
 import Layout from "components/shared/Layout";
 
 import "./index.scss";
+import "magic.css/dist/magic.min.css";
 
 const IndexPage = () => {
   return (

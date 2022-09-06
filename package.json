@@ -29,6 +29,7 @@
     "gatsby-source-filesystem": "^4.20.0",
     "gatsby-transformer-remark": "^5.20.0",
     "gatsby-transformer-sharp": "^4.20.0",
+    "magic.css": "^1.4.8",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.4.0",

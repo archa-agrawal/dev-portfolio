@@ -7,8 +7,7 @@ $Poppins: "Poppins", sans-serif;
 // colors
 $dark: #e96269;
 $light: #f7f7f7;
-$primary: rgb(162, 162, 246);
-$bg: rgb(244, 244, 255);
+$text-color: #111111;
 
 // spacing
 $spacing-md: 16px;
@@ -22,11 +21,15 @@ $headerHeight: 100px;
 
 @mixin breakpoint($point) {
   @if $point == md {
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       @content;
     }
   } @else if $point == sm {
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $point == mdm {
+    @media (max-width: 760px) {
       @content;
     }
   }

@@ -7,8 +7,8 @@ import "./nav.scss";
 const nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
-    width: undefined,
-    height: undefined,
+    width: window.innerWidth,
+    height: window.innerHeight,
   });
 
   useEffect(() => {

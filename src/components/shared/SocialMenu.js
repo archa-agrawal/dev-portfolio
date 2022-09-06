@@ -27,19 +27,49 @@ export default function SocialMenu() {
     <div className={"social-menu"}>
       <ul className={"social-menu-list"}>
         <li>
-          <FiGithub size={size.width > 1000 ? "30px" : "20px"} />
+          <a
+            href={"https://github.com/archa-agrawal"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <FiGithub size={size.width > 1000 ? "30px" : "20px"} />
+          </a>
         </li>
         <li>
-          <FiLinkedin size={size.width > 1000 ? "30px" : "20px"} />
+          <a
+            href={"https://www.linkedin.com/in/archana-ag/"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <FiLinkedin size={size.width > 1000 ? "30px" : "20px"} />
+          </a>
         </li>
         <li>
-          <AiOutlineMedium size={size.width > 1000 ? "30px" : "20px"} />
+          <a
+            href={"https://medium.com/@archana.agrawal3"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <AiOutlineMedium size={size.width > 1000 ? "30px" : "20px"} />
+          </a>
         </li>
         <li>
-          <FaDev size={size.width > 1000 ? "30px" : "20px"} />
+          <a
+            href={"https://dev.to/archanaagrawal"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <FaDev size={size.width > 1000 ? "30px" : "20px"} />
+          </a>
         </li>
         <li>
-          <ImProfile size={size.width > 1000 ? "30px" : "20px"} />
+          <a
+            href={"https://github.com/archa-agrawal"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <ImProfile size={size.width > 1000 ? "30px" : "20px"} />
+          </a>
         </li>
       </ul>
     </div>

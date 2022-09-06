@@ -1,4 +1,16 @@
 .intro-container {
   width: 60%;
-  margin: auto;
+  margin: auto auto 100px;
+}
+.my-tech-container {
+  padding-top: 30px;
+  .my-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    > * {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
 }

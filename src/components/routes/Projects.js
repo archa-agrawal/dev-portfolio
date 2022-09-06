@@ -1,47 +1,38 @@
 import React from "react";
 import Project from "components/functional/Project";
+import projects from "components/data/projects";
 import "./projects.scss";
+import GithubButton from "../functional/GithubButton";
 
-const Projects = () => (
-  <div style={{ backgroundColor: "lightgrey" }} id={"projects"}>
-    <div className={"projects-container"}>
-      <h3>Projects</h3>
+const Projects = () => {
+  const ProjectsArr = projects.map((project) => {
+    return (
       <Project
-        name={"First Project"}
-        desc={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices dui sapien eget mi proin sed libero. Suscipit adipiscing bibendum est ultricies integer quis. Tortor id aliquet lectus proin nibh nisl condimentum. Egestas quis ipsum suspendisse ultrices gravida dictum. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Orci dapibus ultrices in iaculis. "
-        }
-        img={
-          "https://userguiding.com/wp-content/uploads/2021/02/ux-ui-trends-neuromorphic-2.png"
-        }
-        github={"https://github.com/archa-agrawal/todo-list-fe"}
-        live={"fakefake"}
-      />
-      <Project
-        name={"First Project"}
-        desc={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices dui sapien eget mi proin sed libero. Suscipit adipiscing bibendum est ultricies integer quis. Tortor id aliquet lectus proin nibh nisl condimentum. Egestas quis ipsum suspendisse ultrices gravida dictum. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Orci dapibus ultrices in iaculis. "
-        }
-        img={
-          "https://userguiding.com/wp-content/uploads/2021/02/ux-ui-trends-neuromorphic-2.png"
-        }
-        github={"https://github.com/archa-agrawal/todo-list-fe"}
-        live={"fakefake"}
-      />
+        name={project.name}
+        desc={project.description}
+        img={project.img}
+        techs={project.techs}
+        key={project.name}
+      >
+        {project.githubActions.map((action) => (
+          <GithubButton
+            key={action.title}
+            title={action.title}
+            link={action.link}
+          />
+        ))}
+      </Project>
+    );
+  });
 
-      <Project
-        name={"First Project"}
-        desc={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices dui sapien eget mi proin sed libero. Suscipit adipiscing bibendum est ultricies integer quis. Tortor id aliquet lectus proin nibh nisl condimentum. Egestas quis ipsum suspendisse ultrices gravida dictum. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Orci dapibus ultrices in iaculis. "
-        }
-        img={
-          "https://userguiding.com/wp-content/uploads/2021/02/ux-ui-trends-neuromorphic-2.png"
-        }
-        github={"https://github.com/archa-agrawal/todo-list-fe"}
-        live={"fakefake"}
-      />
+  return (
+    <div id={"projects"}>
+      <div className={"projects-container"}>
+        <h3>Projects</h3>
+        {ProjectsArr}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Projects;

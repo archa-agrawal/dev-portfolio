@@ -1,0 +1,18 @@
+@import "utilities/variables";
+
+.tech-badge-container {
+  display: inline-flex;
+  width: auto;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 15px 10px;
+  align-items: center;
+  background: #faf9f6;
+  box-shadow: 0 0 7px $text-color;
+  .tech-title {
+    padding-top: 5px;
+    font-size: 14px;
+  }
+}

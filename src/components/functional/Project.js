@@ -1,22 +1,22 @@
 import React from "react";
 import "./project.scss";
+import TechBadge from "./TechBadge";
 
-const project = ({ img, name, desc, github, live }) => {
+const project = ({ children, img, name, desc, techs }) => {
+  const Techs = techs?.map((tech) => (
+    <TechBadge key={tech.title} icon={tech} />
+  ));
   return (
     <div className={"project"}>
       <div className={"project-meta"}>
         <img src={img} className={"project-image"} />
         <div className={"project-details"}>
-          <h4>{name}</h4>
+          <h4 className={"project-title"}>{name}</h4>
           <p className={"project-desc"}>{desc}</p>
-          <a href={github} className={"project-button"}>
-            Github
-          </a>
-          <a href={live} className={"project-button"}>
-            Live
-          </a>
+          <div className={"project-actions"}>{children}</div>
         </div>
       </div>
+      <div className={"project-techs"}>{Techs}</div>
     </div>
   );
 };
