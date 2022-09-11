@@ -21,7 +21,7 @@ const projects = [
   {
     name: "Decision Maker",
     description:
-      "Create a ranking based poll and share with your frinds. Also see a detailed report of the result and all submissions.",
+      "Create a ranking based poll and share with your friends. Also see a detailed report of the result and all submissions.",
     img: "./mac-dm.png",
     techs: [techs.node, techs.ejs, techs.jquery, techs.postgresql],
     githubActions: [

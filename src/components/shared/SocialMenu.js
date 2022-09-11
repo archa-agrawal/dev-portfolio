@@ -34,7 +34,7 @@ export default function SocialMenu() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <FiGithub size={size.width > 1000 ? "30px" : "20px"} />
+            <FiGithub size={size.width > 1000 ? "1.6rem" : "1rem"} />
           </a>
         </li>
         <li>
@@ -43,7 +43,7 @@ export default function SocialMenu() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <FiLinkedin size={size.width > 1000 ? "30px" : "20px"} />
+            <FiLinkedin size={size.width > 1000 ? "1.6rem" : "1rem"} />
           </a>
         </li>
         <li>
@@ -52,7 +52,7 @@ export default function SocialMenu() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <AiOutlineMedium size={size.width > 1000 ? "30px" : "20px"} />
+            <AiOutlineMedium size={size.width > 1000 ? "1.6rem" : "1rem"} />
           </a>
         </li>
         <li>
@@ -61,7 +61,7 @@ export default function SocialMenu() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <FaDev size={size.width > 1000 ? "30px" : "20px"} />
+            <FaDev size={size.width > 1000 ? "1.6rem" : "1rem"} />
           </a>
         </li>
         <li>
@@ -70,7 +70,7 @@ export default function SocialMenu() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <ImProfile size={size.width > 1000 ? "30px" : "20px"} />
+            <ImProfile size={size.width > 1000 ? "1.6rem" : "1rem"} />
           </a>
         </li>
       </ul>
