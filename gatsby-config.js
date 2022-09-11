@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `dev-portfolio`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Archana Agrawal`,
+    siteUrl: `https://www.archana-agrawal.com`,
   },
   plugins: [
     "gatsby-alias-imports",
@@ -25,6 +25,12 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/favicon.svg",
+      },
     },
   ],
 };
