@@ -9,14 +9,19 @@ const project = ({ children, img, name, desc, techs, inverted }) => {
   return (
     <div className={"project"}>
       <div className={`project-meta ${inverted ? "inverted" : ""}`}>
-        <img src={img} className={"project-image"} />
+        <div className="project-image-container">
+          <img src={img} className={"project-image"} />
+        </div>
         <div className={"project-details"}>
-          <h4 className={"project-title"}>{name}</h4>
+          <h3 className={"project-title"}>{name}</h3>
           <p className={"project-desc"}>{desc}</p>
+          <div className={"project-techs"}>{Techs}</div>
           <div className={"project-actions"}>{children}</div>
         </div>
       </div>
-      <div className={"project-techs"}>{Techs}</div>
+      <div className="hr-container">
+        <hr />
+      </div>
     </div>
   );
 };

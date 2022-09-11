@@ -1,6 +1,11 @@
+@import "utilities/variables";
 .intro-container {
   width: 60%;
-  margin: auto auto 100px;
+  margin: auto;
+  @include breakpoint(sm) {
+    width: 80%;
+  }
+  transition: 0.3s ease all;
 }
 .my-tech-container {
   padding-top: 30px;

@@ -29,7 +29,7 @@ const Projects = () => {
   return (
     <div id={"projects"}>
       <div className={"projects-container"}>
-        <h3>Projects</h3>
+        <h1>Projects</h1>
         {ProjectsArr}
       </div>
     </div>

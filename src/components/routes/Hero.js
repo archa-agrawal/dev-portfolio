@@ -112,10 +112,9 @@ const Hero = () => {
             I am a full stack developer<Emoji>👩🏽‍💻</Emoji>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices
-            dui sapien eget mi proin sed libero. Suscipit adipiscing bibendum
-            est ultricies integer quis.
+            I have a passion for technology. I bring my research and
+            problem-solving aptitude to develop high quality and user-friendly
+            software.
           </p>
         </div>
       </div>

@@ -16,23 +16,23 @@
   }
   transition: 0.3s ease all;
   .avatar {
-    height: 200px;
-    width: 200px;
+    height: 12rem;
+    width: 12rem;
     border-radius: 50%;
     @include breakpoint(md) {
-      height: 150px;
-      width: 150px;
+      height: 10rem;
+      width: 10rem;
     }
     @include breakpoint(sm) {
-      margin-bottom: 40px;
+      margin-bottom: 4rem;
     }
   }
   .details {
-    padding-left: 40px;
+    padding-left: 2.6rem;
     @include breakpoint(sm) {
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 20px;
+      padding-left: 1.3rem;
+      padding-right: 1.3rem;
+      padding-bottom: 1.3rem;
       > p {
         margin: 0;
       }

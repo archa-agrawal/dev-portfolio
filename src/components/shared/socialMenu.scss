@@ -3,10 +3,10 @@
 .social-menu {
   position: fixed;
   bottom: 0;
-  left: 40px;
+  left: 3vw;
   z-index: 10000;
   @include breakpoint(md) {
-    left: 10px;
+    left: 1vw;
   }
   @include breakpoint(sm) {
     display: none;
@@ -19,12 +19,12 @@
     margin: 0;
     padding: 0;
     > li {
-      padding-bottom: 10px;
+      padding-bottom: 0.5rem;
       > a {
         color: inherit;
       }
       &:hover {
-        transform: translateY(-3px);
+        transform: translateY(-0.15rem);
         cursor: pointer;
         > a {
           color: $dark;
@@ -33,14 +33,14 @@
       transition: 0.3s ease all;
     }
     > li:last-of-type {
-      padding-bottom: 20px;
+      padding-bottom: 1.3rem;
     }
   }
   &::after {
     content: "";
     display: block;
-    width: 1px;
-    height: 90px;
+    width: 0.06rem;
+    height: 6rem;
     margin: 0 auto;
     background-color: $text-color;
   }

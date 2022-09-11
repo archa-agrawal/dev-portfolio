@@ -1,6 +1,5 @@
 import {
   SiAdobeillustrator,
-  SiBootstrap,
   SiChai,
   SiCss3,
   SiCypress,
@@ -11,7 +10,6 @@ import {
   SiJquery,
   SiMocha,
   SiNodedotjs,
-  SiPassport,
   SiPostgresql,
   SiReact,
   SiSass,
@@ -71,11 +69,6 @@ const techs = {
     color: "#3c873a",
     icon: SiNodedotjs,
   },
-  bootstrap: {
-    title: "Bootstrap",
-    color: "#7633f9",
-    icon: SiBootstrap,
-  },
   express: {
     title: "Express",
     color: "gray",
@@ -85,11 +78,6 @@ const techs = {
     title: "Rest API",
     color: "blue",
     icon: TbApi,
-  },
-  passport: {
-    title: "PassportJS",
-    color: "#3c873a",
-    icon: SiPassport,
   },
   storybook: {
     title: "StorybookJS",

@@ -12,18 +12,19 @@ const Intro = () => {
   return (
     <div id={"intro"} className={"intro"}>
       <div className={"intro-container"}>
-        <h3>About Me</h3>
+        <h2>About Me</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices
-          dui sapien eget mi proin sed libero. Suscipit adipiscing bibendum est
-          ultricies integer quis. Tortor id aliquet lectus proin nibh nisl
-          condimentum.
+          Hello world! I recently graduated from Lighthouse labs with a diploma
+          in web development. I come from a medical research background. My
+          extensive training and experience in research make me a strong
+          programmer with refined problem solving and debugging skills.
         </p>
         <p>
-          Egestas quis ipsum suspendisse ultrices gravida dictum. Orci nulla
-          pellentesque dignissim enim sit amet venenatis urna. Orci dapibus
-          ultrices in iaculis.
+          Work ethics and progressive culture play a very important part of
+          defining an ideal workplace for me. I aspire to work in the industry
+          that takes pride in having values such as inclusion, equality, and
+          diversity. I offer to bring empathy, teamwork, and interpersonal
+          skills to contribute to a positive work environment.
         </p>
         <div className={"my-tech-container"}>
           <h3>My Tech Stack</h3>
