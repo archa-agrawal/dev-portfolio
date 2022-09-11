@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { AiOutlineMedium } from "react-icons/ai";
 import { ImProfile } from "react-icons/im";
@@ -6,25 +6,6 @@ import { FaDev } from "react-icons/fa";
 import "./socialMenu.scss";
 
 export default function SocialMenu() {
-  const [size, setSize] = useState({
-    width: typeof window !== "undefined" ? window.innerWidth : 0,
-    height: typeof window !== "undefined" ? window.innerHeight : 0,
-  });
-
-  if (typeof window !== "undefined") {
-    useEffect(() => {
-      const handleResize = () => {
-        setSize({
-          width: window.innerWidth,
-          height: window.innerHeight,
-        });
-      };
-      window.addEventListener("resize", handleResize);
-
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
-  }
-
   return (
     <div className={"social-menu"}>
       <ul className={"social-menu-list"}>
@@ -34,7 +15,7 @@ export default function SocialMenu() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <FiGithub size={size.width > 1000 ? "1.6rem" : "1rem"} />
+            <FiGithub size={"1.6rem"} />
           </a>
         </li>
         <li>
@@ -43,7 +24,7 @@ export default function SocialMenu() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <FiLinkedin size={size.width > 1000 ? "1.6rem" : "1rem"} />
+            <FiLinkedin size={"1.6rem"} />
           </a>
         </li>
         <li>
@@ -52,7 +33,7 @@ export default function SocialMenu() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <AiOutlineMedium size={size.width > 1000 ? "1.6rem" : "1rem"} />
+            <AiOutlineMedium size={"1.6rem"} />
           </a>
         </li>
         <li>
@@ -61,7 +42,7 @@ export default function SocialMenu() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <FaDev size={size.width > 1000 ? "1.6rem" : "1rem"} />
+            <FaDev size={"1.6rem"} />
           </a>
         </li>
         <li>
@@ -70,7 +51,7 @@ export default function SocialMenu() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <ImProfile size={size.width > 1000 ? "1.6rem" : "1rem"} />
+            <ImProfile size={"1.6rem"} />
           </a>
         </li>
       </ul>
