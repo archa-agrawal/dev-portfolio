@@ -7,21 +7,22 @@ import "./nav.scss";
 const nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: typeof window !== "undefined" ? window.innerWidth : 0,
+    height: typeof window !== "undefined" ? window.innerHeight : 0,
   });
+  if (typeof window !== "undefined") {
+    useEffect(() => {
+      const handleResize = () => {
+        setSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      };
+      window.addEventListener("resize", handleResize);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    };
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+  }
 
   useEffect(() => {
     if (size.width > 1000 && menuOpen) {
