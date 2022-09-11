@@ -5,7 +5,7 @@ import "./projects.scss";
 import GithubButton from "../functional/GithubButton";
 
 const Projects = () => {
-  const ProjectsArr = projects.map((project) => {
+  const ProjectsArr = projects.map((project, index) => {
     return (
       <Project
         name={project.name}
@@ -13,6 +13,7 @@ const Projects = () => {
         img={project.img}
         techs={project.techs}
         key={project.name}
+        inverted={!!(index % 2)}
       >
         {project.githubActions.map((action) => (
           <GithubButton

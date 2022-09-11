@@ -3,7 +3,7 @@ import * as React from "react";
 import Hero from "components/routes/Hero";
 import Intro from "components/routes/Intro";
 import Projects from "components/routes/Projects";
-import Contact from "components/routes/Contact";
+//import Contact from "components/routes/Contact";
 
 import Layout from "components/shared/Layout";
 
@@ -16,7 +16,6 @@ const IndexPage = () => {
       <Hero />
       <Intro />
       <Projects />
-      <Contact />
     </Layout>
   );
 };

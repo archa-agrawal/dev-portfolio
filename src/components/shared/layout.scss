@@ -15,6 +15,10 @@ body {
     position: relative;
     top: $nav-height;
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    @include breakpoint(sm) {
+      scroll-snap-type: unset;
+    }
     overflow: auto;
     &::-webkit-scrollbar {
       display: none;

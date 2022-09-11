@@ -3,6 +3,7 @@
   width: 80%;
   margin: auto;
   padding: 30px;
+  padding-bottom: 400px;
   @include breakpoint(md) {
     width: 90%;
     padding-right: 0;

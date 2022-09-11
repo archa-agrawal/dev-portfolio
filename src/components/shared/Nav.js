@@ -60,11 +60,6 @@ const nav = () => {
                 Projects
               </a>
             </li>
-            <li>
-              <a href={"#contact"} onClick={menuToggleHandler}>
-                Contact Me
-              </a>
-            </li>
           </ul>
           <button onClick={() => {}}>Resume</button>
         </nav>
