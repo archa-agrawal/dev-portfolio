@@ -1,4 +1,4 @@
-$nav-height: 100px;
+$nav-height: 5rem;
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
@@ -16,14 +16,11 @@ $tile-color: #faf9f6;
 //$tile-color: #0a1929;
 
 // spacing
-$spacing-md: 16px;
-$spacing-lg: 32px;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
 
 // border radius
-$borderRadius: 12px;
-
-// header height
-$headerHeight: 100px;
+$borderRadius: 0.75rem;
 
 @mixin breakpoint($point) {
   @if $point == md {

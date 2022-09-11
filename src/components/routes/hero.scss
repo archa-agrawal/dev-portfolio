@@ -12,7 +12,7 @@
   }
   @include breakpoint(sm) {
     flex-direction: column;
-    margin-top: 20%;
+    margin-top: 5%;
   }
   transition: 0.3s ease all;
   .avatar {
