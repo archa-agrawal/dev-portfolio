@@ -2,7 +2,6 @@ import React from "react";
 import Project from "components/functional/Project";
 import projects from "components/data/projects";
 import "./projects.scss";
-import GithubButton from "../functional/GithubButton";
 
 const Projects = () => {
   const ProjectsArr = projects.map((project, index) => {
@@ -13,16 +12,9 @@ const Projects = () => {
         img={project.img}
         techs={project.techs}
         key={project.name}
+        githubActions={project.githubActions}
         inverted={!!(index % 2)}
-      >
-        {project.githubActions.map((action) => (
-          <GithubButton
-            key={action.title}
-            title={action.title}
-            link={action.link}
-          />
-        ))}
-      </Project>
+      />
     );
   });
 

@@ -1,12 +1,14 @@
 @import "utilities/variables";
-.github-button-container {
+.social-button-container {
   display: inline-flex;
   background-color: $dark;
   color: $light;
   padding: 0.8rem;
   border-radius: 0.8rem;
   text-decoration: none;
-  .github-button-title {
+  max-height: 19px;
+  height: 19px;
+  .social-button-title {
     margin-left: 0.4rem;
     top: 0.2rem;
     position: relative;

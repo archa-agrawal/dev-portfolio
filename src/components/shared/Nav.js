@@ -61,6 +61,11 @@ const nav = () => {
                 Projects
               </a>
             </li>
+            <li>
+              <a href={"#contact"} onClick={menuToggleHandler}>
+                Contact
+              </a>
+            </li>
           </ul>
           <button
             onClick={() =>
