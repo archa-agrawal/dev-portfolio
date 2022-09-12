@@ -102,7 +102,7 @@ const Hero = () => {
       <DynamicBackground container={bottomLeftDynamicBackground} icons={bottomLeftIcons} className={"dynamic-background-bottom"}/>
       <DynamicBackground container={bottomRightDynamicBackground} icons={bottomRightIcons} className={"dynamic-background-bottom"}/>*/}
       <div className={"hero-container"}>
-        <img className={"avatar"} src={"./avatar.png"} />
+        <img className={"avatar"} src={"./profile-1.png"} />
         <div className={"details"}>
           <h3>
             Hi<Emoji>👋</Emoji>, my name is

@@ -47,7 +47,13 @@ export default function SocialMenu() {
         </li>
         <li>
           <a
-            href={"https://github.com/archa-agrawal"}
+            onClick={() =>
+              window.open(
+                "./archana-agrawal-resume.pdf",
+                "_blank",
+                "fullscreen=yes"
+              )
+            }
             target={"_blank"}
             rel="noreferrer"
           >

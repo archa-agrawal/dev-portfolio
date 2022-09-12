@@ -62,7 +62,17 @@ const nav = () => {
               </a>
             </li>
           </ul>
-          <button onClick={() => {}}>Resume</button>
+          <button
+            onClick={() =>
+              window.open(
+                "./archana-agrawal-resume.pdf",
+                "_blank",
+                "fullscreen=yes"
+              )
+            }
+          >
+            Resume
+          </button>
         </nav>
         <div className={"navheader__content__toggle"}>
           {!menuOpen ? (
