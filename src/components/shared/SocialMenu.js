@@ -7,8 +7,8 @@ import "./socialMenu.scss";
 
 export default function SocialMenu() {
   return (
-    <div className={"social-menu"}>
-      <ul className={"social-menu-list"}>
+    <div className={"samajik-menu"}>
+      <ul className={"samajik-menu-list"}>
         <li>
           <a
             href={"https://github.com/archa-agrawal"}

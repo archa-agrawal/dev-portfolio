@@ -38,7 +38,7 @@ const Contact = () => {
         </div>
 
         <p>Connect on</p>
-        <div className={"social-container"}>
+        <div className={"samajik-container"}>
           <SocialButton
             key={"LinkedIn"}
             title={"LinkedIn"}

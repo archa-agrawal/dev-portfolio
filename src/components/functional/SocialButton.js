@@ -7,10 +7,10 @@ const SocialButton = ({ title, link, Icon }) => {
       href={link}
       target={"_blank"}
       rel="noreferrer"
-      className={"social-button-container"}
+      className={"samajik-button-container"}
     >
       <Icon />
-      <div className={"social-button-title"}>{title}</div>
+      <div className={"samajik-button-title"}>{title}</div>
     </a>
   );
 };
