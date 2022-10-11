@@ -2,7 +2,6 @@
 .intro-container {
   width: 60%;
   margin: 5% auto auto;
-  padding-bottom: 20rem;
   @include breakpoint(sm) {
     width: 80%;
     margin-top: 0;
