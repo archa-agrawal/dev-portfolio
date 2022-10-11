@@ -4,6 +4,7 @@ import {
   SiCss3,
   SiCypress,
   SiExpress,
+  SiGatsby,
   SiHtml5,
   SiJavascript,
   SiJest,
@@ -115,6 +116,11 @@ const techs = {
     title: "Illustrator",
     color: "#310000",
     icon: SiAdobeillustrator,
+  },
+  gatsby: {
+    title: "Gatsby",
+    color: "#663399",
+    icon: SiGatsby,
   },
 };
 

@@ -4,7 +4,7 @@ const projects = [
   {
     name: "Mapi",
     description:
-      "A Map sharing social network. Create and share maps with your friends and the world.",
+      "A Map sharing social network. Create and share maps with your friends and the world. Uses Mapbox APIs.",
     img: "./mac-mapi.png",
     techs: [techs.node, techs.react, techs.redux, techs.postgresql],
     githubActions: [
@@ -19,6 +19,19 @@ const projects = [
     ],
   },
   {
+    name: "Spotify Playlist Manager",
+    description:
+      "Manage and categorize your spotify playlists and stats easily using this app. Authenticates using spotify account.",
+    img: "./mac-spm.png",
+    techs: [techs.node, techs.react, techs.postgresql],
+    githubActions: [
+      {
+        title: "Github",
+        link: "https://github.com/archa-agrawal/spotify-playlist-manager",
+      },
+    ],
+  },
+  {
     name: "Decision Maker",
     description:
       "Create a ranking based poll and share with your friends. Also see a detailed report of the result and all submissions.",
@@ -28,6 +41,18 @@ const projects = [
       {
         title: "Github",
         link: "https://github.com/archa-agrawal/decision-maker",
+      },
+    ],
+  },
+  {
+    name: "Portfolio Website",
+    description: "This portfolio website built using react and gastby.",
+    techs: [techs.react, techs.gatsby],
+    img: "./mac-ws.png",
+    githubActions: [
+      {
+        title: "Github",
+        link: "https://github.com/archa-agrawal/dev-portfolio",
       },
     ],
   },
