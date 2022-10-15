@@ -13,7 +13,7 @@ const Contact = () => {
         <div className={"email-container"}>
           <p>Contact me at: </p>
           <a href={"mailto:archana.agrawal3@outlook.com"}>
-            archana.agrawal3@outlook.com
+            archana.agrawal604@gmail.com
           </a>
         </div>
 
