@@ -39,16 +39,3 @@
     }
   }
 }
-.dynamic-background-side {
-  display: flex;
-  @include breakpoint(md) {
-    display: none;
-  }
-}
-
-.dynamic-background-bottom {
-  display: flex;
-  @include breakpoint(sm) {
-    display: none;
-  }
-}
