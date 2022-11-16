@@ -18,7 +18,7 @@ const projects = [
       },
       {
         title: "Live",
-        link: "https://mapi.onrender.com"
+        link: "https://mapi.onrender.com",
       }
     ],
   },
