@@ -17,7 +17,7 @@ const projects = [
         link: "https://github.com/archa-agrawal/mapi-server",
       },
       {
-        title: "live",
+        title: "Live",
         link: "https://mapi.onrender.com"
       }
     ],
