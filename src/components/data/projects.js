@@ -33,6 +33,10 @@ const projects = [
         title: "Github",
         link: "https://github.com/archa-agrawal/spotify-playlist-manager",
       },
+      {
+        title: "Live",
+        link: "https://www.spotifyplaylistmanager.com/",
+      }
     ],
   },
   {
